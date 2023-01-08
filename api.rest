@@ -1,0 +1,76 @@
+GET http://localhost:8000/book/1
+
+###
+
+DELETE http://localhost:8000/book/9
+
+###
+
+PUT http://localhost:8000/book/12
+Content-Type: application/json
+
+{
+"Author": "Vasya", "Title": "666666","ClientID": 45
+}
+
+###
+
+GET http://localhost:8000/book/list
+
+###
+
+POST  http://localhost:8000/book/create
+Content-Type: application/json
+
+{
+"Author": "Petya","Title": "1234567890"
+}
+
+###
+
+POST  http://localhost:8000/book/take/1
+Content-Type: application/json
+
+{"ids":[17,16,15,13,1]}
+
+###
+
+GET http://localhost:8000/book/return/2
+
+#############################################################################################
+
+POST  http://localhost:8000/client/create
+Content-Type: application/json
+
+{
+"Name": "Vasya","PhoneName":"3453647"
+}
+
+###
+
+GET http://localhost:8000/client/list
+
+###
+
+DELETE http://localhost:8000/client/51
+
+###
+
+GET http://localhost:8000/client/4
+
+###
+
+PUT http://localhost:8000/client/4
+Content-Type: application/json
+
+{
+"Name": "Petya","PhoneName":"9764750"
+}
+
+###
+
+GET http://localhost:8000/client/booklist/45
+
+#############################################################################################
+
+GET http://localhost:8000/client/booklist/45
